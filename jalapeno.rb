@@ -9,17 +9,17 @@ class Jalapeno < Formula
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/futurice/jalapeno/releases/download/v0.1.8/jalapeno-darwin-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "a1534a526b8d69d34c2b06fc30aebbbdcb003759d10209f782c0ff7270b74227"
+    if Hardware::CPU.intel?
+      url "https://github.com/futurice/jalapeno/releases/download/v0.1.8/jalapeno-darwin-amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f67e0fd0191c08074195a8e1d0b4b217a12f340ad2a5b0ef507ff3193f1915c7"
 
       def install
         bin.install "jalapeno"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/futurice/jalapeno/releases/download/v0.1.8/jalapeno-darwin-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "346fb3e0b8fb8011cd6b84f3d6967b331527c921e78813452a780906bd1facee"
+    if Hardware::CPU.arm?
+      url "https://github.com/futurice/jalapeno/releases/download/v0.1.8/jalapeno-darwin-arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "fad4c90753cae489944e7964bab73fd9e234ac782c46d168fb6855c4e64a0f65"
 
       def install
         bin.install "jalapeno"
@@ -30,7 +30,7 @@ class Jalapeno < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/futurice/jalapeno/releases/download/v0.1.8/jalapeno-linux-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e1d2a1594ac46d2e72fc25c8227d71fc4bb782c4d14928542936568ed088125a"
+      sha256 "a5c43947f1c5f1568a3a1eaff75292033555a89ac67b9bab512b2fa73085d261"
 
       def install
         bin.install "jalapeno"
@@ -38,7 +38,7 @@ class Jalapeno < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/futurice/jalapeno/releases/download/v0.1.8/jalapeno-linux-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5c6cdb96406ac79d22446027d6d21d3b1eacb8569a06e08c69990de6ee9dfa93"
+      sha256 "9c20d00f0e7b5ba5c719967bf660ebbf2f1eaaa6e3056eb8ae6f7057bff93655"
 
       def install
         bin.install "jalapeno"
