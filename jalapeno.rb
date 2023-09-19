@@ -5,21 +5,21 @@
 class Jalapeno < Formula
   desc "Jalapeno is a CLI for creating, managing and sharing spiced up project templates"
   homepage "https://futurice.github.io/jalapeno/"
-  version "0.1.6"
+  version "0.1.7"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/futurice/jalapeno/releases/download/v0.1.6/jalapeno-darwin-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "4ee5e3ae886fcd7275e15a6cef3c15f51272106674100b8bcd1c5d83421e449b"
+    if Hardware::CPU.intel?
+      url "https://github.com/futurice/jalapeno/releases/download/v0.1.7/jalapeno-darwin-amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "003eea35f620326ddb2ef75c31f7f1c78448b4b23b2d847fc7738463f8f45a0a"
 
       def install
         bin.install "jalapeno"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/futurice/jalapeno/releases/download/v0.1.6/jalapeno-darwin-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bb9ff695956f09074e8cc91f7acd50a4ae7f51e235cc83cd48aa7c6d245dc1a6"
+    if Hardware::CPU.arm?
+      url "https://github.com/futurice/jalapeno/releases/download/v0.1.7/jalapeno-darwin-arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "56dac7185baf08f4da3ee7cc7abbbb22d57284a07382b2a505585d0b10e27d63"
 
       def install
         bin.install "jalapeno"
@@ -29,16 +29,16 @@ class Jalapeno < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/futurice/jalapeno/releases/download/v0.1.6/jalapeno-linux-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "84f967c3a9588bb6c9ff83e10db080d5c20440a6ac2efdb44026d807c2b04be6"
+      url "https://github.com/futurice/jalapeno/releases/download/v0.1.7/jalapeno-linux-arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "34a2ab0c1dc43f1ab4ff6358aef9556ccac14bd6613b855c9e8ae325ea0ffded"
 
       def install
         bin.install "jalapeno"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/futurice/jalapeno/releases/download/v0.1.6/jalapeno-linux-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "855c0f0f0d2d854b58708c023ff5edb844eb8b101e7a140d682e77aed1da3b32"
+      url "https://github.com/futurice/jalapeno/releases/download/v0.1.7/jalapeno-linux-amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9c78e4b374b1e1ef909615e8259952981c61063f1b0888954592ba333e830761"
 
       def install
         bin.install "jalapeno"
