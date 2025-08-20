@@ -2,7 +2,7 @@
 cask "jalapeno" do
   desc "Jalapeno is a CLI for creating, managing and sharing spiced up project templates"
   homepage "https://futurice.github.io/jalapeno/"
-  version "1.16.2"
+  version "1.17.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "jalapeno" do
 
   on_macos do
     on_intel do
-      url "https://github.com/futurice/jalapeno/releases/download/v1.16.2/jalapeno-darwin-amd64.tar.gz"
-      sha256 "d217277a65517e7ebc094d256728dfb6857f12aa9237be71e694df1891d05ccc"
+      url "https://github.com/futurice/jalapeno/releases/download/v1.17.0/jalapeno-darwin-amd64.tar.gz"
+      sha256 "d3362a8d6551831f967bad571ea07fd03cdbdce7a41e102b537f969f63cf0532"
     end
     on_arm do
-      url "https://github.com/futurice/jalapeno/releases/download/v1.16.2/jalapeno-darwin-arm64.tar.gz"
-      sha256 "eb7f0e49af7db55a1a0cfa78eb79379f87bc6bc2605f285c3cdea8f20c3ed07f"
+      url "https://github.com/futurice/jalapeno/releases/download/v1.17.0/jalapeno-darwin-arm64.tar.gz"
+      sha256 "8eb68b78e1318da8be6b8048bd5a34cb39134c51d3c0e898e397139bd2b4be28"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/futurice/jalapeno/releases/download/v1.16.2/jalapeno-linux-amd64.tar.gz"
-      sha256 "e6abbe8de4e2fad5187be6d530db35385485a6c1757355be9e25a8b8ec01fb26"
+      url "https://github.com/futurice/jalapeno/releases/download/v1.17.0/jalapeno-linux-amd64.tar.gz"
+      sha256 "664aff9a1b6758fbcc2218da102bd5a4ed373c945051b802dcab5e1e6b581a76"
     end
     on_arm do
-      url "https://github.com/futurice/jalapeno/releases/download/v1.16.2/jalapeno-linux-arm64.tar.gz"
-      sha256 "f343056ef9cb7de00beab5b315e3e774bac08e18417e20dcb1ea9f61d4ea3859"
+      url "https://github.com/futurice/jalapeno/releases/download/v1.17.0/jalapeno-linux-arm64.tar.gz"
+      sha256 "df21222019b071215fad7744b83552ca7938c99bcba94a506e4c6661544bec0c"
     end
   end
 
